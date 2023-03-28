@@ -9,7 +9,7 @@ export const registration = async (obj) => {
 }
 
 export const login = async (telephoneNumber, password) => {
-    const response = await $host.post('login', {telephoneNumber: telephoneNumber, password: password})
+    const response = await $host.post('user/login', {telephoneNumber: telephoneNumber, password: password})
 
     return response
 }
